@@ -39,6 +39,21 @@
   p { margin: 0 0 .85rem; }
   ul { margin: .25rem 0 .85rem; padding-left: 1.15rem; }
   li { margin: 0 0 .5rem; }
+  a { color: #1457d9; }
+  .baglantilar { display: grid; gap: .65rem; margin: .35rem 0 1rem; }
+  .dugme {
+    display: block;
+    padding: .72rem .9rem;
+    border: 1px solid #b9cdf8;
+    border-radius: 10px;
+    background: color-mix(in srgb, #2563eb 8%, var(--kart));
+    color: #1457d9;
+    font-weight: 700;
+    line-height: 1.35;
+    text-decoration: none;
+  }
+  .dugme:hover { background: color-mix(in srgb, #2563eb 14%, var(--kart)); }
+  .dugme:focus-visible { outline: 3px solid #93b4ff; outline-offset: 2px; }
   section {
     background: var(--kart);
     border: 1px solid var(--cizgi);
@@ -51,12 +66,12 @@
 <body>
 <main>
   <h1>Gizlilik Politikası</h1>
-  <p class="yururluk">Ehliyet Sınav Hazırlık · Yürürlük tarihi: 29 Ağustos 2026</p>
+  <p class="yururluk">Ehliyet Sınav Hazırlık · Yürürlük tarihi: 30 Ağustos 2026</p>
 
   <section>
     <h2>Özet</h2>
     <p class="etiket">Uzun metni okumak istemeyenler için</p>
-    <p>Uygulamada reklam, izleme (tracking) ve analitik yoktur. Çalışmalarınız telefonunuzda kalır. Sunucuya yalnızca Yarış ve Liderlik Tablosu için, yalnızca hesap açtığınızda veri gider. Hesabınızı istediğiniz an uygulama içinden kalıcı olarak silebilirsiniz.</p>
+    <p>Uygulamada reklam, izleme (tracking) ve analitik yoktur. Çalışmalarınız telefonunuzda kalır. Sunucuya yalnızca Yarış ve Liderlik Tablosu için, yalnızca hesap açtığınızda veri gider. Hesabınızı istediğiniz an uygulama içinden kalıcı olarak silebilir veya uygulamaya erişemiyorsanız web sayfamızdan silme talebi gönderebilirsiniz.</p>
   </section>
 
   <section>
@@ -92,21 +107,42 @@
   </section>
 
   <section>
-    <h2>Verilerinizi kimseye vermiyoruz</h2>
-    <p>Toplanan hiçbir veri satılmaz, reklam amacıyla kullanılmaz ve üçüncü taraflarla paylaşılmaz. Uygulamada reklam ağı, analitik aracı veya çapraz uygulama izleme yoktur; bu nedenle sizden izleme izni de istenmez.</p>
+    <h2>Verilerinizi satmıyoruz</h2>
+    <p>Toplanan hiçbir veri satılmaz veya reklam amacıyla kullanılmaz. Uygulamada reklam ağı, analitik aracı veya çapraz uygulama izleme yoktur; bu nedenle sizden izleme izni de istenmez.</p>
+    <p>Takma adınız, yukarıda açıklanan içerik denetimini yapabilmesi için hizmet sağlayıcımız OpenAI’a gönderilir. Bunun dışında kişisel verileriniz reklam verenlerle, veri komisyoncularıyla veya başka üçüncü taraflarla paylaşılmaz.</p>
     <p>Veriler yalnızca uygulamanın kendi sunucusunda, şifreli bağlantı üzerinden saklanır. Oturum belirteçleriniz telefonda düz dosyaya değil, işletim sisteminin şifreli anahtar deposunda (iOS Keychain / Android Keystore) tutulur; sunucuda ise belirteçlerin kendisi değil yalnızca geri döndürülemez özetleri bulunur.</p>
   </section>
 
   <section>
+    <h2>Saklama süreleri</h2>
+    <p>Hesap bilgileriniz ve liderlik puanlarınız hesabınız açık olduğu sürece saklanır. Google veya Apple oturumları 30 gün kullanılmadığında geçersizleşir ve oturum kaydı silinir.</p>
+    <p>Hesap silindiğinde sizi doğrudan tanımlayan bilgiler kaldırılır. Tamamlanmış yarışların bütünlüğünü korumak için geçmiş katılım ve cevap kayıtları, kimliğinizden ayrılmış anonim bir hesap numarasıyla saklanabilir; bu kayıtlar hesabınıza veya giriş bilgilerinize yeniden bağlanamaz.</p>
+  </section>
+
+  <section>
     <h2>Hesabınızı silmek</h2>
-    <p class="etiket">Uygulama içinden, tek adımda</p>
-    <p>Profil ekranındaki &quot;Hesabı sil&quot; düğmesi hesabınızı kalıcı olarak siler. Takma adınız, giriş bilginiz (sağlayıcı kimliği, e-posta, profil fotoğrafı adresi) ve liderlik puanlarınız sunucudan kaldırılır; silinen hesapla tekrar giriş yapılamaz. İşlem geri alınamaz.</p>
-    <p>Cihazınızdaki çalışma kayıtlarınızı silmek için uygulamayı kaldırmanız yeterlidir — o veriler zaten yalnızca telefonunuzda durur.</p>
+    <p class="etiket">Uygulama içinden doğrudan veya web üzerinden talep ederek</p>
+    <p>Profil ekranındaki &quot;Hesabı sil&quot; düğmesi hesabınızı kalıcı olarak siler. Takma adınız, giriş bilginiz (sağlayıcı kimliği, e-posta, profil fotoğrafı adresi) ve liderlik puanlarınız sunucudan kaldırılır; silinen hesapla tekrar giriş yapılamaz. Tamamlanmış yarış kayıtları yukarıda açıklanan anonim biçimde kalabilir. İşlem geri alınamaz.</p>
+    <p>Uygulamaya erişemiyorsanız aşağıdaki Hesap Silme Talebi sayfasından e-posta ile talep gönderebilirsiniz. Güvenliğiniz için talebi hesabı açarken kullandığınız Google veya Apple e-posta adresinden göndermeniz ve takma adınızı belirtmeniz istenir. Parolanızı veya giriş kodunuzu asla istemeyiz. Kimlik doğrulandıktan sonra talep en geç 30 gün içinde tamamlanır.</p>
+    <p>Cihazınızdaki çalışma kayıtlarınızı silmek için uygulamayı kaldırmanız ve işletim sistemi yedeklerini cihaz veya bulut hesabı ayarlarınızdan yönetmeniz gerekir; bu kayıtlar uygulamanın sunucusuna gönderilmez.</p>
+    <div class="baglantilar">
+      <a class="dugme" href="https://berkegozukara.github.io/ehliyet-gizlilik/hesap-silme/" target="_blank" rel="noopener">Hesap Silme Talebi sayfasını aç</a>
+      <a class="dugme" href="mailto:berkegozukara46@gmail.com?subject=Ehliyet%20S%C4%B1nav%20Haz%C4%B1rl%C4%B1k%20-%20Hesap%20Silme%20Talebi">Gizlilik ekibine e-posta gönder: berkegozukara46@gmail.com</a>
+    </div>
   </section>
 
   <section>
     <h2>Çocukların gizliliği</h2>
     <p>Uygulama ehliyet sınavına hazırlanan sürücü adaylarına yöneliktir ve 13 yaşın altındaki çocuklardan bilerek veri toplamaz.</p>
+  </section>
+
+  <section>
+    <h2>Geliştirici ve iletişim</h2>
+    <p class="etiket">Gizlilik ve veri hakları başvuruları</p>
+    <p>Uygulamanın geliştiricisi ve veri sorumlusu Berke Gözükara’dır. Gizlilik politikası, kişisel verileriniz veya hesap silme işlemiyle ilgili sorularınız için berkegozukara46@gmail.com adresine ulaşabilirsiniz.</p>
+    <div class="baglantilar">
+      <a class="dugme" href="mailto:berkegozukara46@gmail.com?subject=Ehliyet%20S%C4%B1nav%20Haz%C4%B1rl%C4%B1k%20-%20Gizlilik">berkegozukara46@gmail.com</a>
+    </div>
   </section>
 
   <section>
@@ -116,7 +152,9 @@
 
   <footer>
     Bu sayfa uygulamanın içindeki Ayarlar &rsaquo; Gizlilik Politikası ekranıyla
-    aynı metni gösterir.
+    aynı metni gösterir.<br>
+    Geliştirici: Berke Gözükara ·
+    <a href="mailto:berkegozukara46@gmail.com">berkegozukara46@gmail.com</a>
   </footer>
 </main>
 </body>

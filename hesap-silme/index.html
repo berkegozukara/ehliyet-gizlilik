@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesap Silme Talebi — Ehliyet Sınav Hazırlık</title>
+<meta name="description" content="Ehliyet Sınav Hazırlık hesabınızı ve ilişkili kişisel verilerinizi silme talebi gönderin.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --zemin: #f5f7fb;
+    --yazi: #111827;
+    --soluk: #667085;
+    --kart: #ffffff;
+    --cizgi: #e3e7ef;
+    --vurgu: #1d4ed8;
+    --vurgu-acik: #edf3ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --zemin: #0b0f16;
+      --yazi: #f8fafc;
+      --soluk: #aab4c3;
+      --kart: #151b24;
+      --cizgi: #293240;
+      --vurgu: #91baff;
+      --vurgu-acik: #17243a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--zemin);
+    color: var(--yazi);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.18rem; line-height: 1.3; margin: 0 0 .55rem; }
+  p { margin: 0 0 .85rem; }
+  ol, ul { margin: .35rem 0 .85rem; padding-left: 1.3rem; }
+  li { margin-bottom: .55rem; }
+  .alt { color: var(--soluk); margin-bottom: 1.75rem; }
+  .kart {
+    margin-bottom: 1rem;
+    padding: 1.2rem 1.3rem;
+    background: var(--kart);
+    border: 1px solid var(--cizgi);
+    border-radius: 14px;
+  }
+  .birincil {
+    display: block;
+    margin: 1.1rem 0 .7rem;
+    padding: .85rem 1rem;
+    border-radius: 11px;
+    background: var(--vurgu);
+    color: var(--kart);
+    font-weight: 800;
+    line-height: 1.35;
+    text-align: center;
+    text-decoration: none;
+  }
+  .birincil:focus-visible, .metin-link:focus-visible { outline: 3px solid #93b4ff; outline-offset: 3px; }
+  .not {
+    padding: .85rem 1rem;
+    border-left: 4px solid var(--vurgu);
+    border-radius: 8px;
+    background: var(--vurgu-acik);
+  }
+  .metin-link { color: var(--vurgu); font-weight: 700; }
+  footer { color: var(--soluk); font-size: .9rem; margin-top: 2.5rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hesap Silme Talebi</h1>
+  <p class="alt">Ehliyet Sınav Hazırlık · Geliştirici: Berke Gözükara</p>
+
+  <section class="kart">
+    <h2>Uygulamaya erişiminiz varsa</h2>
+    <p>En hızlı yöntem uygulama içindeki doğrudan silme işlemidir:</p>
+    <ol>
+      <li>Profil ekranını açın.</li>
+      <li><strong>Hesabı sil</strong> seçeneğine dokunun.</li>
+      <li>Onay verdiğinizde hesabınız ve doğrudan tanımlayıcı verileriniz sunucudan kalıcı olarak silinir.</li>
+    </ol>
+  </section>
+
+  <section class="kart">
+    <h2>Uygulamaya erişemiyorsanız</h2>
+    <p>Hesabı açarken kullandığınız Google veya Apple e-posta adresinden silme talebi gönderin. Apple’ın “E-postamı Gizle” özelliğini kullandıysanız aynı özel aktarma adresini kullanın.</p>
+    <a class="birincil" href="mailto:berkegozukara46@gmail.com?subject=Ehliyet%20S%C4%B1nav%20Haz%C4%B1rl%C4%B1k%20-%20Hesap%20Silme%20Talebi&amp;body=Takma%20ad%C4%B1m%3A%0AGiri%C5%9F%20sa%C4%9Flay%C4%B1c%C4%B1m%20%28Google%20veya%20Apple%29%3A%0A%0AHesab%C4%B1m%C4%B1n%20ve%20ili%C5%9Fkili%20ki%C5%9Fisel%20verilerimin%20silinmesini%20talep%20ediyorum.">E-posta ile silme talebi gönder</a>
+    <p>E-posta uygulamanız açılmazsa talebinizi <a class="metin-link" href="mailto:berkegozukara46@gmail.com">berkegozukara46@gmail.com</a> adresine gönderin. Mesaja takma adınızı ve giriş sağlayıcınızı (Google veya Apple) ekleyin.</p>
+    <p class="not"><strong>Güvenlik:</strong> Parolanızı, tek kullanımlık giriş kodunuzu veya kimlik belgenizi istemeyiz. Talep, hesapla ilişkili e-posta adresi üzerinden doğrulanır ve doğrulamanın ardından en geç 30 gün içinde tamamlanır.</p>
+  </section>
+
+  <section class="kart">
+    <h2>Silinen ve saklanabilen veriler</h2>
+    <p><strong>Silinenler:</strong> takma ad, sağlayıcı kullanıcı kimliği, e-posta adresi, profil fotoğrafı adresi, aktif oturumlar ve liderlik puanları.</p>
+    <p><strong>Saklanabilenler:</strong> tamamlanmış yarışların bütünlüğü için geçmiş katılım ve cevap kayıtları kimliğinizden ayrılarak anonim biçimde tutulabilir. Bu kayıtlar hesabınıza veya giriş bilgilerinize yeniden bağlanamaz.</p>
+    <p>Cihazınızdaki sınav sonuçları, kaydedilen sorular ve ilerleme bilgileri sunucumuza gönderilmez. Bunları kaldırmak için uygulamayı kaldırın ve işletim sistemi yedeklerini cihaz veya bulut hesabı ayarlarınızdan yönetin.</p>
+  </section>
+
+  <footer>
+    <a class="metin-link" href="https://berkegozukara.github.io/ehliyet-gizlilik/">Gizlilik Politikasına dön</a><br>
+    İletişim: <a class="metin-link" href="mailto:berkegozukara46@gmail.com">berkegozukara46@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

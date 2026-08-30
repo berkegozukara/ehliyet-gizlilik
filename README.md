@@ -4,7 +4,10 @@ Bu repo yalnızca **Ehliyet Sınav Hazırlık** iOS/Android uygulamasının gizl
 politikasını barındırır. App Store Connect ve Google Play, mağaza künyesinde
 herkese açık bir "Privacy Policy URL" istediği için var.
 
-Yayınlanan adres: <https://berkegozukara.github.io/ehliyet-gizlilik/>
+Yayınlanan adresler:
+
+- Gizlilik politikası: <https://berkegozukara.github.io/ehliyet-gizlilik/>
+- Hesap silme talebi: <https://berkegozukara.github.io/ehliyet-gizlilik/hesap-silme/>
 
 ## index.html elle düzenlenmez
 
@@ -16,6 +19,10 @@ kaynaktan besleniyor. Metin değiştiğinde orada güncelleyip:
 npm run gizlilik:html
 ```
 
-çalıştırın, çıkan `docs/gizlilik.html` dosyasını buraya `index.html` olarak
-kopyalayıp commit'leyin. Burada elle yapılan düzenleme bir sonraki üretimde
-kaybolur ve mağazadaki metin uygulamanınkinden sapar.
+çalıştırın. Çıkan dosyaları aşağıdaki hedeflere kopyalayıp commit'leyin:
+
+- `docs/gizlilik.html` → `index.html`
+- `docs/hesap-silme.html` → `hesap-silme/index.html`
+
+Burada elle yapılan düzenleme bir sonraki üretimde kaybolur ve mağazadaki metin
+uygulamanınkinden sapar.
