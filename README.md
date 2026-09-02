@@ -1,6 +1,6 @@
-# Ehliyet Sınav Hazırlık — Gizlilik Politikası
+# Ehliyet Sınav Soruları — Gizlilik Politikası
 
-Bu repo yalnızca **Ehliyet Sınav Hazırlık** iOS/Android uygulamasının gizlilik
+Bu repo yalnızca **Ehliyet Sınav Soruları** iOS/Android uygulamasının gizlilik
 politikasını barındırır. App Store Connect ve Google Play, mağaza künyesinde
 herkese açık bir "Privacy Policy URL" istediği için var.
 
